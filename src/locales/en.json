@@ -1,0 +1,37 @@
+{
+  "name": "Name",
+  "pet": "Pet",
+  "pets": {
+    "dog": "Dog",
+    "cat": "Cat"
+  },
+  "gender": "Gender",
+  "genders": {
+    "female": "Female",
+    "male": "Male"
+  },
+  "size": "Size",
+  "sizes": {
+    "small": "Small",
+    "medium": "Medium",
+    "large": "Large"
+  },
+  "age": "Age",
+  "ages": {
+    "kitten": "Kitten",
+    "puppy": "Puppy",
+    "young": "Young",
+    "adult": "Adult",
+    "senior": "Senior"
+  },
+  "breed": "Breed",
+  "breeds": {
+
+  },
+  "hair": "Hair",
+  "hairs": {
+    "short": "Short",
+    "medium": "Medium",
+    "long": "Long"
+  }
+}

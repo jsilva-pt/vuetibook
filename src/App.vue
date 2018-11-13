@@ -1,21 +1,37 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <v-app>
+    <div class="logos pa-3">
+      <div>
+        <div><img src="@/assets/vuetify.svg" /></div>
+        <div>Vuetify</div>
+      </div>
+      <div>
+        <div><img src="@/assets/vue.png" /></div>
+        <div>Vue.js</div>
+      </div>
+      <div>
+        <div><img src="@/assets/storybook.png" /></div>
+        <div>Storybook</div>
+      </div>
     </div>
-    <router-view/>
-  </div>
+    <div id="nav" class="links pa-3">
+      <router-link to="/">Grid</router-link> |
+      <router-link to="/add">Add</router-link> |
+      <router-link to="/view">View</router-link>
+    </div>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+export default {
+  name: 'App'
 }
+</script>
+
+<style>
 #nav {
   padding: 30px;
 }
@@ -27,5 +43,20 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.links {
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+.logos img {
+  height: 100px;
 }
 </style>
