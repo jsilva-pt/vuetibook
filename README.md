@@ -11,7 +11,10 @@ to what a real application would be.
 - Vue Router
 - Vue I18n
 - Storybook
+- VuePress
+- Vue Test Utils
 - Jest
+- Cypress
 
 ## Project setup
 ```
@@ -32,6 +35,12 @@ yarn serve:storybook
 
 # Compiles and minifies storybook for production
 yarn build:storybook
+
+# Compiles and hot-reloads for development
+yarn docs:dev
+
+# Compiles and minifies for production
+yarn docs:build
 
 # Run unit tests
 yarn test:unit
