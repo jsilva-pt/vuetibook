@@ -46,3 +46,13 @@ yarn docs:build
 yarn test:unit
 ```
 
+## Docker Available Commands
+
+``` bash
+docker build --target dev-stage -t my-app .
+docker run -it -p 8080:8080 --rm -v $(pwd):/app my-app
+
+or 
+
+docker-compose up
+```

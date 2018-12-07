@@ -3,7 +3,7 @@
     <div class="logos pa-3">
       <div>
         <div><img src="@/assets/vuetify.svg" /></div>
-        <div>Vuetify</div>
+        <div>Vuetify yo</div>
       </div>
       <div>
         <div><img src="@/assets/vue.png" /></div>

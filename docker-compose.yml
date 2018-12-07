@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+ vue:
+   build:
+     context: .
+     dockerfile: Dockerfile
+     target: dev-stage
+   ports:
+     - '8080:8080'
+   volumes:
+     - '$PWD:/app'
+   container_name: my-app
+   command:
+     - yarn
+     - serve
