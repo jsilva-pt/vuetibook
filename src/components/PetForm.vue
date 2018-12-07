@@ -162,14 +162,12 @@ export default {
 
       if (this.selectedPet.extraFields.size) {
         if (!this.sizes[this.selectedPet.code]) {
-          console.log('loading ... ' + this.selectedPet.label)
           this.sizes[this.selectedPet.code] = []
         }
       }
 
       if (this.selectedPet.extraFields.hair) {
         if (!this.hairs[this.selectedPet.code]) {
-          console.log('loading ... ' + this.selectedPet.label)
           this.hairs[this.selectedPet.code] = []
         }
       }

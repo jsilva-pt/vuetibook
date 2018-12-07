@@ -6,9 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit",
+    "build:storybook": "vue-cli-service build:storybook -c config/storybook",
     "serve:storybook": "vue-cli-service serve:storybook -p 6008 -c config/storybook",
-    "build:storybook": "vue-cli-service build:storybook -c config/storybook"
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "material-design-icons-iconfont": "^4.0.2",
@@ -23,6 +24,7 @@
     "@storybook/addon-actions": "4.0.0-alpha.20",
     "@storybook/addon-links": "4.0.0-alpha.20",
     "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-e2e-cypress": "^3.2.0",
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-plugin-pwa": "^3.0.1",
     "@vue/cli-plugin-unit-jest": "^3.0.1",

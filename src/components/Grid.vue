@@ -23,7 +23,7 @@ export default {
   props: {
     items: {
       type: Array,
-      required: true,
+      required: true
     },
     numberOfCols: {
       type: Number,
