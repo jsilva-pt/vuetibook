@@ -7,10 +7,10 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "build:storybook": "vue-cli-service build:storybook -c config/storybook",
-    "serve:storybook": "vue-cli-service serve:storybook -p 6008 -c config/storybook",
+    "serve:storybook": "vue-cli-service serve:storybook -p 8081 -c config/storybook",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev -p 8082 docs",
     "docs:build": "vuepress build docs"
   },
   "dependencies": {

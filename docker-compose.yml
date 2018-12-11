@@ -1,15 +1,37 @@
 version: '3.4'
 services:
- vue:
-   build:
-     context: .
-     dockerfile: Dockerfile
-     target: dev-stage
-   ports:
-     - '8080:8080'
-   volumes:
-     - '$PWD:/app'
-   container_name: my-app
-   command:
-     - yarn
-     - serve
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app
+    ports:
+      - '8080:8080'
+    volumes:
+      - '$PWD:/app'
+    container_name: app
+
+
+  storybook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: storybook
+    ports:
+      - '8081:8081'
+    volumes:
+      - '$PWD:/app'
+    container_name: storybook
+
+
+  docs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: docs
+    ports:
+      - '8082:8082'
+    volumes:
+      - '$PWD:/app'
+    container_name: docs

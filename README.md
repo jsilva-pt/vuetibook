@@ -49,10 +49,15 @@ yarn test:unit
 ## Docker Available Commands
 
 ``` bash
-docker build --target dev-stage -t my-app .
-docker run -it -p 8080:8080 --rm -v $(pwd):/app my-app
-
-or 
-
 docker-compose up
+
+http://localhost:8080/ # App
+http://localhost:8081/ # Storybook
+http://localhost:8082/ # Documentation
 ```
+
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning and [Keep a Changelog](http://keepachangelog.com/) for the format of the ChangeLog. For the versions available, see the [tags on this repository](https://github.com/jsilva-pt/vue-vuetify-storybook/tags).
+

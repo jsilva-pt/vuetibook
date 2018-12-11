@@ -1,19 +1,17 @@
-# dev stage
-FROM node:10.14.1-alpine as dev-stage
+# app
+FROM node:10.14.1-alpine as app
 WORKDIR /app
 EXPOSE 8080
 CMD yarn install && yarn serve
 
-# build stage
-FROM node:10.14.1-alpine as build-stage
+# storybook
+FROM node:10.14.1-alpine as storybook
 WORKDIR /app
-COPY package*.json ./
-RUN yarn install
-COPY . .
-RUN yarn build
+EXPOSE 8081
+CMD yarn install && yarn serve:storybook
 
-# production stage
-FROM nginx:1.13.12-alpine as production-stage
-COPY --from=build-stage /app/dist /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# docs
+FROM node:10.14.1-alpine as docs
+WORKDIR /app
+EXPOSE 8082
+CMD yarn install && yarn docs:dev
