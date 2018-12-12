@@ -35,3 +35,15 @@ services:
     volumes:
       - '$PWD:/app'
     container_name: docs
+
+
+  mock:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: mockserver
+    ports:
+      - '8090:8090'
+    volumes:
+      - '$PWD/mock:/data'
+    container_name: mockserver

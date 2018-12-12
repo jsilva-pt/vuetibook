@@ -15,3 +15,10 @@ FROM node:10.14.1-alpine as docs
 WORKDIR /app
 EXPOSE 8082
 CMD yarn install && yarn docs:dev
+
+# mock server
+FROM node:10.14.1-alpine as mockserver
+RUN npm install -g json-server
+WORKDIR /data
+EXPOSE 8090
+CMD json-server --watch db.json --port 8090 --host 0.0.0.0
