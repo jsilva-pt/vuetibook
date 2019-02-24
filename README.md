@@ -5,7 +5,8 @@ Some tools like Vue I18n and Vuex are also used in order to make the project sim
 to what a real application would be.
 
 ## Dockerize for development
-
+https://gist.github.com/jessedearing/2351836
+https://superuser.com/questions/437330/how-do-you-add-a-certificate-authority-ca-to-ubuntu
 ``` bash
 docker-compose up
 

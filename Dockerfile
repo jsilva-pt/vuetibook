@@ -1,24 +1,16 @@
-# app
-FROM node:10.14.1-alpine as app
+FROM node:10.14.1-alpine as build-stage
 WORKDIR /app
-EXPOSE 8080
-CMD yarn install && yarn serve
+COPY package*.json ./
+COPY . .
+RUN \
+  yarn install && \
+  yarn build
 
-# storybook
-FROM node:10.14.1-alpine as storybook
-WORKDIR /app
-EXPOSE 8081
-CMD yarn install && yarn serve:storybook
-
-# docs
-FROM node:10.14.1-alpine as docs
-WORKDIR /app
-EXPOSE 8082
-CMD yarn install && yarn docs:dev
-
-# mock server
-FROM node:10.14.1-alpine as mockserver
-RUN npm install -g json-server
-WORKDIR /data
-EXPOSE 8090
-CMD json-server --watch db.json --port 8090 --host 0.0.0.0
+# production stage
+FROM nginx:1.15.2-alpine as production-stage
+COPY --from=build-stage /app/dist /var/www
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY ssl /etc/ssl
+EXPOSE 80
+EXPOSE 443
+CMD ["nginx", "-g", "daemon off;"]

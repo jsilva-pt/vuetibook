@@ -1,0 +1,8 @@
+# app
+FROM node:10.14.1-alpine as dev-stage
+WORKDIR /app
+
+# mock server
+FROM node:10.14.1-alpine as mock-server
+RUN npm install -g nodemon
+WORKDIR /data
