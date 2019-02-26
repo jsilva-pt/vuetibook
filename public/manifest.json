@@ -1,6 +1,6 @@
 {
-  "name": "vue-vuetify-storybook",
-  "short_name": "vue-vuetify-storybook",
+  "name": "vuetibook",
+  "short_name": "vuetibook",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

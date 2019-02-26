@@ -5,7 +5,6 @@ Some tools like Vue I18n and Vuex are also used in order to make the project sim
 to what a real application would be.
 
 ## Dockerize for development
-
 ``` bash
 docker-compose up
 

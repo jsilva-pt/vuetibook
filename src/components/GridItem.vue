@@ -1,6 +1,6 @@
 <template>
   <div class="grid-item">
-    <img :src="url">
+    <img :src="url" alt="image alt text">
 
     <div class="grid-item--info">
       <div class="title">{{ title }}</div>

@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Business Area',
+  title: 'Vuetibook',
   description: 'Documentation',
   themeConfig: {
     nav: [

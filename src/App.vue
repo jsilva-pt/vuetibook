@@ -2,15 +2,15 @@
   <v-app>
     <div class="logos pa-3">
       <div>
-        <div><img src="@/assets/vuetify.svg" /></div>
+        <div><img src="@/assets/vuetify.webp" alt="alt text" /></div>
         <div>Vuetify yo</div>
       </div>
       <div>
-        <div><img src="@/assets/vue.png" /></div>
+        <div><img src="@/assets/vue.webp" alt="alt text" /></div>
         <div>Vue.js</div>
       </div>
       <div>
-        <div><img src="@/assets/storybook.png" /></div>
+        <div><img src="@/assets/storybook.webp" alt="alt text" /></div>
         <div>Storybook</div>
       </div>
     </div>
@@ -42,7 +42,7 @@ export default {
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: blue;
 }
 
 .links {
