@@ -6,5 +6,5 @@ These instructions will get you the project up and running on your local machine
 Clone the project
 
 ``` bash
-git clone git@github.com:jsilva-pt/vue-vuetify-storybook.git
+git clone git@github.com:jsilva-pt/vuetibook.git
 ```

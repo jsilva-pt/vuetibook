@@ -1,4 +1,4 @@
-# vue-vuetify-storybook
+# vuetibook
 Experimenting the integration between Vue.js, Vuetify and Storybook.
 
 Some tools like Vue I18n and Vuex are also used in order to make the project similar
@@ -79,4 +79,4 @@ yarn test:unit
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning and [Keep a Changelog](http://keepachangelog.com/) for the format of the ChangeLog. For the versions available, see the [tags on this repository](https://github.com/jsilva-pt/vue-vuetify-storybook/tags).
+We use [SemVer](http://semver.org/) for versioning and [Keep a Changelog](http://keepachangelog.com/) for the format of the ChangeLog. For the versions available, see the [tags on this repository](https://github.com/jsilva-pt/vuetibook/tags).
