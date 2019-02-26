@@ -42,10 +42,10 @@ yarn serve:storybook
 yarn build:storybook
 
 # Compiles and hot-reloads for development
-yarn docs:dev
+yarn serve:docs
 
 # Compiles and minifies for production
-yarn docs:build
+yarn build:docs
 
 # Run unit tests
 yarn test:unit
