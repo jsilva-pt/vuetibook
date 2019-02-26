@@ -4,6 +4,11 @@ Experimenting the integration between Vue.js, Vuetify and Storybook.
 Some tools like Vue I18n and Vuex are also used in order to make the project similar
 to what a real application would be.
 
+## Deployed on Netlify
+- https://vuetibook.netlify.com
+- https://components-vuetibook.netlify.com
+- https://docs-vuetibook.netlify.com
+
 ## Dockerize for development
 ``` bash
 docker-compose up
