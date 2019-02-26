@@ -10,59 +10,47 @@ services:
       - '8080:8080'
     volumes:
       - '.:/app'
-      # - './configs/nginx/ssl:/app/ssl'
     env_file:
       - .env
     container_name: app
     command: sh -c "yarn install && yarn serve"
 
-  # storybook:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile.dev
-  #     target: dev-stage
-  #   ports:
-  #     - '8081:8081'
-  #   volumes:
-  #     - '.:/app'
-  #     # - './configs/nginx/ssl:/app/ssl'
-  #   env_file:
-  #     - .env
-  #   container_name: storybook
-  #   command: sh -c "yarn install && yarn serve:storybook"
+  storybook:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      target: dev-stage
+    ports:
+      - '8081:8081'
+    volumes:
+      - '.:/app'
+    env_file:
+      - .env
+    container_name: storybook
+    command: sh -c "yarn install && yarn serve:storybook"
 
-  # docs:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile.dev
-  #     target: dev-stage
-  #   ports:
-  #     - '8082:8082'
-  #   volumes:
-  #     - '.:/app'
-  #   env_file:
-  #     - .env
-  #   container_name: docs
-  #   command: sh -c "yarn install && yarn serve:docs"
-  #   networks:
-  #     business-area-network:
-  #       aliases:
-  #         - business.jumiapay.local
+  docs:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      target: docs-dev-stage
+    ports:
+      - '8082:8082'
+    volumes:
+      - './docs:/app'
+    env_file:
+      - .env
+    container_name: docs
+    command: sh -c "vuepress dev -p 8082 ."
 
-  # mock_server:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile.dev
-  #     target: mock-server
-  #   ports:
-  #     - '8090:3002'
-  #   volumes:
-  #     - '.:/data'
-  #     # - './configs/nginx/ssl:/data/ssl'
-  #   container_name: mock-server
-  #   command: sh -c "yarn install && cd mocks && nodemon server.js"
-  #   networks:
-  #     business-area-network:
-  #       aliases:
-  #         - business.jumiapay.local
-
+  mock_server:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      target: mock-server
+    ports:
+      - '8090:3002'
+    volumes:
+      - './mocks:/data'
+    container_name: mock-server
+    command: sh -c "yarn install && nodemon server.js"
