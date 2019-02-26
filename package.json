@@ -10,8 +10,8 @@
     "serve:storybook": "vue-cli-service storybook:serve --ci -p 8081 -c config/storybook",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
-    "docs:dev": "vuepress dev -p 8082 docs",
-    "docs:build": "vuepress build docs"
+    "serve:docs": "vuepress dev -p 8082 docs",
+    "build:docs": "vuepress build docs"
   },
   "dependencies": {
     "material-design-icons-iconfont": "^4.0.2",
