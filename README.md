@@ -2,7 +2,6 @@
 
 ![David](https://img.shields.io/david/jsilva-pt/vuetibook.svg)
 [![HitCount](http://hits.dwyl.io/j-silva/vuetibook.svg)](http://hits.dwyl.io/j-silva/vuetibook)
-![GitHub All Releases](https://img.shields.io/github/downloads/jsilva-pt/vuetibook/total.svg)
 
 Experimenting the integration between Vue.js, Vuetify and Storybook.
 
