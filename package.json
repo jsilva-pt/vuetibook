@@ -21,8 +21,8 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^4.1.13",
-    "@storybook/addon-links": "^4.1.13",
+    "@storybook/addon-actions": "^5.0.0",
+    "@storybook/addon-links": "^5.0.0",
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-e2e-cypress": "^3.4.0",
     "@vue/cli-plugin-eslint": "^3.4.0",
@@ -40,7 +40,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-cli-plugin-i18n": "^0.5.1",
-    "vue-cli-plugin-storybook": "^0.5.2",
+    "vue-cli-plugin-storybook": "storybooks/vue-cli-plugin-storybook#master",
     "vue-cli-plugin-vuetify": "^0.4.6",
     "vue-template-compiler": "^2.6.2",
     "vuetify-loader": "^1.2.0"
