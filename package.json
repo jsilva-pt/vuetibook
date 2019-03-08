@@ -9,9 +9,7 @@
     "build:storybook": "vue-cli-service storybook:build -c config/storybook",
     "serve:storybook": "vue-cli-service storybook:serve --ci -p 8081 -c config/storybook",
     "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit",
-    "serve:docs": "vuepress dev -p 8082 docs",
-    "build:docs": "vuepress build docs"
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "material-design-icons-iconfont": "^4.0.2",
@@ -45,7 +43,6 @@
     "vue-cli-plugin-storybook": "^0.5.2",
     "vue-cli-plugin-vuetify": "^0.4.6",
     "vue-template-compiler": "^2.6.2",
-    "vuepress": "^0.14.8",
     "vuetify-loader": "^1.2.0"
   }
 }

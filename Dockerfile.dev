@@ -1,10 +1,5 @@
-# app
+# app &  storybook & docs
 FROM node:alpine as dev-stage
-WORKDIR /app
-
-# documentation
-FROM node:alpine as docs-dev-stage
-RUN yarn global add vuepress
 WORKDIR /app
 
 # mock server

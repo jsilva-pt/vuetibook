@@ -1,56 +1,84 @@
-version: '3.4'
+version: '3.5'
 services:
+  nginx:
+    image: 'nginx:latest'
+    volumes:
+      - './nginx/configs:/etc/nginx/conf.d/'
+    ports:
+      - '8080:80'
+    container_name: nginx
+    depends_on:
+      - app
+      - storybook
+      - docs
+      - mock_server
+    networks:
+      vuetibook-area-network:
+        aliases:
+          - vuetibook.local
 
   app:
     build:
       context: .
       dockerfile: Dockerfile.dev
       target: dev-stage
-    ports:
-      - '8080:8080'
     volumes:
       - '.:/app'
     env_file:
       - .env
     container_name: app
     command: sh -c "yarn install && yarn serve"
+    networks:
+      vuetibook-area-network:
+        aliases:
+          - vuetibook.local
 
   storybook:
     build:
       context: .
       dockerfile: Dockerfile.dev
       target: dev-stage
-    ports:
-      - '8081:8081'
     volumes:
       - '.:/app'
     env_file:
       - .env
     container_name: storybook
     command: sh -c "yarn install && yarn serve:storybook"
+    networks:
+      vuetibook-area-network:
+        aliases:
+          - components.vuetibook.local
 
   docs:
     build:
       context: .
       dockerfile: Dockerfile.dev
-      target: docs-dev-stage
-    ports:
-      - '8082:8082'
+      target: dev-stage
     volumes:
       - './docs:/app'
     env_file:
       - .env
     container_name: docs
-    command: sh -c "vuepress dev -p 8082 ."
+    command: sh -c "yarn install && yarn serve:docs"
+    networks:
+      vuetibook-area-network:
+        aliases:
+          - docs.vuetibook.local
 
   mock_server:
     build:
       context: .
       dockerfile: Dockerfile.dev
       target: mock-server
-    ports:
-      - '8090:3002'
     volumes:
       - './mocks:/data'
     container_name: mock-server
     command: sh -c "yarn install && nodemon server.js"
+    networks:
+      vuetibook-area-network:
+        aliases:
+          - mocks.vuetibook.local
+
+networks:
+  vuetibook-area-network:
+    name: vuetibook-area

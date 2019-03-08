@@ -13,10 +13,10 @@ to what a real application would be.
 ``` bash
 docker-compose up
 
-http://localhost:8080/ # App
-http://localhost:8081/ # Storybook
-http://localhost:8082/ # Documentation
-http://localhost:8090/ # Mock Server
+http://vuetibook.local:8080/ # App
+http://components.vuetibook.local:8080/ # Storybook
+http://docs.vuetibook.local:8080/ # Documentation
+http://mocks.vuetibook.local:8080/ # Mock Server
 ```
 
 ## Local Installation

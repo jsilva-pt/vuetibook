@@ -1,0 +1,13 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "technical documentation",
+  "private": true,
+  "scripts": {
+    "serve:docs": "vuepress dev -p 8081 .",
+    "build:docs": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "^1.0.0-alpha.42"
+  }
+}
