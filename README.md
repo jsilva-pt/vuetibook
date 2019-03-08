@@ -12,43 +12,52 @@ to what a real application would be.
 ## Dockerize for development
 ``` bash
 docker-compose up
-
-http://vuetibook.local:8080/ # App
-http://components.vuetibook.local:8080/ # Storybook
-http://docs.vuetibook.local:8080/ # Documentation
-http://mocks.vuetibook.local:8080/ # Mock Server
 ```
+
+- App: http://vuetibook.local:8080/
+- Storybook: http://components.vuetibook.local:8080/
+- Documentation: http://docs.vuetibook.local:8080/
+- Mock Server: http://mocks.vuetibook.local:8080/
+
 
 ## Local Installation
 
 ### Project setup
-```
+``` bash
+# app & storybook
+yarn install
+
+# docs
+cd docs
+yarn install
+
+# mocks
+cd mocks
 yarn install
 ```
 
 ### Available Commands
 
 ``` bash
-# Compiles and hot-reloads for development
-yarn serve
+# app
+yarn serve # Compiles and hot-reloads for development
+yarn build # Compiles and minifies for production
 
-# Compiles and minifies for production
-yarn build
-
-# Compiles and hot-reloads storybook for development
-yarn serve:storybook
-
-# Compiles and minifies storybook for production
-yarn build:storybook
-
-# Compiles and hot-reloads for development
-yarn serve:docs
-
-# Compiles and minifies for production
-yarn build:docs
+# Storybook
+yarn serve:storybook # Compiles and hot-reloads for development
+yarn build:storybook # Compiles and minifies for production
 
 # Run unit tests
 yarn test:unit
+
+# Documentation
+cd docs
+yarn serve:docs # Compiles and hot-reloads for development
+yarn build:docs # Compiles and minifies for production
+
+# Mock Server
+cd mocks
+yarn serve # Hot-reloads for development
 ```
 
 ## Built With
