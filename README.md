@@ -10,7 +10,7 @@ to what a real application would be.
 
 ## Deployed on Netlify
 - [![Netlify Status](https://api.netlify.com/api/v1/badges/27f26b57-41de-4cc7-8e15-b1db81235862/deploy-status)](https://app.netlify.com/sites/vuetibook/deploys) https://vuetibook.netlify.com
-- [![Netlify Status](https://api.netlify.com/api/v1/badges/fc4b6992-770b-447f-af8c-b77722e85ab9/deploy-status)](https://app.netlify.com/sites/components-vuetibook/deploys) https://components-vuetibook.netlify.com
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/fc4b6992-770b-447f-af8c-b77722e85ab9/deploy-status)](https://app.netlify.com/sites/components-vuetibook/deploys) [![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://components-vuetibook.netlify.com) https://components-vuetibook.netlify.com
 - [![Netlify Status](https://api.netlify.com/api/v1/badges/faac7f1b-8957-4cc1-8193-ea2843dd6ff1/deploy-status)](https://app.netlify.com/sites/docs-vuetibook/deploys) https://docs-vuetibook.netlify.com
 
 ## Dockerize for development
