@@ -40,7 +40,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-cli-plugin-i18n": "^0.5.1",
-    "vue-cli-plugin-storybook": "storybooks/vue-cli-plugin-storybook#master",
+    "vue-cli-plugin-storybook": "^0.6.0",
     "vue-cli-plugin-vuetify": "^0.4.6",
     "vue-template-compiler": "^2.6.2",
     "vuetify-loader": "^1.2.0"
