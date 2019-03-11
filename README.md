@@ -1,13 +1,17 @@
 # vuetibook
+
+![David](https://img.shields.io/david/jsilva-pt/vuetibook.svg)
+[![HitCount](http://hits.dwyl.io/j-silva/vuetibook.svg)](http://hits.dwyl.io/j-silva/vuetibook)
+
 Experimenting the integration between Vue.js, Vuetify and Storybook.
 
 Some tools like Vue I18n and Vuex are also used in order to make the project similar
 to what a real application would be.
 
 ## Deployed on Netlify
-- https://vuetibook.netlify.com
-- https://components-vuetibook.netlify.com
-- https://docs-vuetibook.netlify.com
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/27f26b57-41de-4cc7-8e15-b1db81235862/deploy-status)](https://app.netlify.com/sites/vuetibook/deploys) https://vuetibook.netlify.com
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/fc4b6992-770b-447f-af8c-b77722e85ab9/deploy-status)](https://app.netlify.com/sites/components-vuetibook/deploys) [![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://components-vuetibook.netlify.com) https://components-vuetibook.netlify.com
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/faac7f1b-8957-4cc1-8193-ea2843dd6ff1/deploy-status)](https://app.netlify.com/sites/docs-vuetibook/deploys) https://docs-vuetibook.netlify.com
 
 ## Dockerize for development
 ``` bash
